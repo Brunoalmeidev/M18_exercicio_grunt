@@ -17,10 +17,10 @@ Um sistema simples de **controle de estoque para marmoraria**, feito em **HTML, 
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/projeto-marmoraria.git
+   git clone https://github.com/Brunoalmeidev/M_18_exercicio_grunt.git
 
 2. Entre na pasta do projeto:
-    cd projeto-marmoraria
+    cd M18_exercicio_grunt
 
 3. Instale as dependências:
     npm install
