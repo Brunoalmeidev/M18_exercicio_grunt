@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque - Marmoraria</title>
+    <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Controle de Estoque - Marmoraria</h1>
+
+        <section id="estoque">
+            <h2>Estoque Atual</h2>
+            <ul id="listaEstoque"></ul>
+        </section>
+
+        <section id="vendas">
+            <h2>Registrar Venda</h2>
+            <input type="text" id="produtoVenda" placeholder="Nome do produto">
+            <input type="number" id="quantidadeVenda" placeholder="Quantidade">
+            <button id="btnVender">Vender</button>
+        </section>
+
+        <section id="adicionar">
+            <h2>Adicionar Produto</h2>
+            <input type="text" id="produtoNovo" placeholder="Nome do produto">
+            <input type="number" id="quantidadeNova" placeholder="Quantidade">
+            <button id="btnAdicionar">Adicionar</button>
+        </section>
+    </div>
+
+    <script src="../dist/js/app.min.js"></script>
+
+    <footer class="footer">
+    <p>© 2025 Marmoraria | Desenvolvido por Bruno D. Almeida</p>
+    </footer>
+</body>
+
+</html>

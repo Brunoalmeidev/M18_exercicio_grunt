@@ -1,0 +1,158 @@
+@bg: #f0f2f5;
+@container: #ffffff;
+@primary: #4f46e5; // roxo azulado (moderno)
+@primary-hover: lighten(@primary, 5%);
+@text: #1f2937;
+@border: #e5e7eb;
+@success: #10b981;
+@danger: #ef4444;
+
+// 🔄 Reset básico
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: @bg;
+    color: @text;
+    line-height: 1.6;
+}
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background: @container;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: @primary;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: @text;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+section {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid @border;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #f3f4f6;
+    }
+}
+
+#listaEstoque {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+
+    li {
+        padding: 14px 18px;
+        background: white;
+        border-radius: 10px;
+        border: 1px solid @border;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background: lighten(@primary, 45%);
+            transform: translateY(-2px);
+        }
+
+        span {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+    }
+}
+
+input,
+button {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input {
+    border: 1px solid @border;
+    background: #fdfdfd;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+
+    &:focus {
+        outline: none;
+        border-color: @primary;
+        box-shadow: 0 0 8px fade(@primary, 40%);
+    }
+}
+
+button {
+    cursor: pointer;
+    background: @primary;
+    color: white;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+
+    &:hover {
+        background: @primary-hover;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+.btn-success {
+    background: @success;
+
+    &:hover {
+        background: lighten(@success, 5%);
+    }
+}
+
+.btn-danger {
+    background: @danger;
+
+    &:hover {
+        background: lighten(@danger, 5%);
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #6b7280;
+    border-top: 1px solid @border;
+    background: #f9fafb;
+    border-radius: 0 0 12px 12px;
+}
